@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
 
         String ammountInPounds = editText.getText().toString();
         Double ammountInPoundsDouble = Double.parseDouble(ammountInPounds);
-        Double ammontInDollersDouble = ammountInPoundsDouble * 1.29;
+        Double ammontInDollersDouble = ammountInPoundsDouble * 71.76;
         String ammontInDollersString = String.format("%.2f", ammontInDollersDouble);
         Log.i("Convert", ammontInDollersString);
         Log.i("Give",editText.getText().toString());
-        Toast.makeText(this, ammountInPounds + " Euro is " + "$ " + ammontInDollersString, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, ammountInPounds + " $ is " + " ₹ " + ammontInDollersString, Toast.LENGTH_LONG).show();
     }
 
     @Override
