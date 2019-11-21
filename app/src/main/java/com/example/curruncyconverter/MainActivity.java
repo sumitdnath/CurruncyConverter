@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         String ammountInPounds = editText.getText().toString();
         Double ammountInPoundsDouble = Double.parseDouble(ammountInPounds);
-        Double ammontInDollersDouble = ammountInPoundsDouble * 1.3;
+        Double ammontInDollersDouble = ammountInPoundsDouble * 1.29;
         String ammontInDollersString = String.format("%.2f", ammontInDollersDouble);
         Log.i("Convert", ammontInDollersString);
         Log.i("Give",editText.getText().toString());
